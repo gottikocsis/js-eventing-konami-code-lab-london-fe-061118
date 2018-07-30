@@ -8,14 +8,17 @@ const body = document.querySelector('body')
 
 body.addEventListener('keydown', function(event){
  const key = parseInt(event.detail || event.which);
+ 
   if (key === code[index]){
        index++;
        
   if (index === code.length){
     alert('Hurray');
+    
+    index = 0;
   }
   }
-  alert('Hurray');
+
 })
 }
 init()
